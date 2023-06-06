@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WhatsApp Web</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/fd384f8db8.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="container">
+            <aside id="sideBar">
+                <div id="barraDeFerramentas">
+                    <img src="./img/avatar1.png" class="fotoUsuario" alt="Imagem do avatar 1">
+                    <div class='auxIcon'>
+                        <i class="fas fa-spinner"></i>
+                        <i class="fas fa-comment-alt"></i>
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                </div>
+                <div id="containerNotification">
+                    <i class="fas fa-bell-slash"></i>
+                    <p id="receberNotification">Receive notifications</p>
+                    <p id="ativarNotification">Enable notifications on desktop <i class="fas fa-angle-right"></i> </p>
+                </div>
+                <div id="containerPesquisa">
+                    <i id="porcurarContato" class="fas fa-search"></i>
+                    <input type="text" name="search" id="procura" placeholder="Search or start a new conversation">
+                </div>
+                <div id="containerContatos"> 
+                    <div class="boxContato chatAtivo">
+                        <img src="./img/avatar2.png" alt="Imagem do avatar 2" class="fotoUsuario">
+                        <div class="ifoUsuario">
+                            <p class="nomeUsuario">Joana Farias</p>
+                            <p class="previewMenssage">
+                                <i class="fas fa-check-double"></i> 
+                                Hi, how are you?
+                            </p>
+                        </div>
+                        <div class="infoMenssage">
+                            <p class="horario">22:40</p>
+                        </div>
+                    </div>
+                    <div class="boxContato">
+                        <img src="./img/avatar3.png" alt="Imagem do avatar 2" class="fotoUsuario">
+                        <div class="ifoUsuario">
+                            <p class="nomeUsuario">Francisco Mattos</p>
+                            <p class="previewMenssage">
+                                Are you available for a new job?
+                            </p>
+                        </div>
+                        <div class="infoMenssage">
+                            <p class="horario">20:44</p>
+                            <p class="menssagePendente">3</p>
+                        </div>
+                    </div>
+                    <div class="boxContato">
+                        <img src="./img/avatar4.png" alt="Imagem do avatar 3" class="fotoUsuario">
+                        <div class="ifoUsuario">
+                            <p class="nomeUsuario">Carina Borges</p>
+                            <p class="previewMenssage">
+                                The project turned out perfect, thank you!
+                            </p>
+                        </div>
+                        <div class="infoMenssage">
+                            <p class="horario">18:33</p>
+                            <p class="menssagePendente">5</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main id="chatArea">
+                <nav id="chatNavBar">
+                    <div id="containerContactInfo">
+                        <img src="./img/avatar2.png" alt="Imagem do avatar 2" class="fotoUsuario">
+                        <p class="nomeUsuario">Joana Farias</p>
+                    </div>
+                    <ul id="containerFerramentasChat">
+                        <li><i class="fas fa-search"></i></li>
+                        <li><i class="fas fa-paperclip"></i></li>
+                        <li><i class="fas fa-ellipsis-v"></i></li>
+                    </ul>
+                </nav>
+                <div id="containerMenssages">
+                    <div class="bg-image"></div>
+                    <div class="chatMenssages">
+                        <p class="remetenteMenssage">Hi, how are you?</p>
+                        <p class="destinMenssage">Hi, how are you?</p>
+                    </div>
+                </div>
+                <div class="containerEnviarMenssage">
+                    <i class="fas fa-grin"></i>
+                    <input type="text" name="menssage" id="inputUsuario" placeholder="Type a message...">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
