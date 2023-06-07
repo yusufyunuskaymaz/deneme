@@ -1,359 +1,425 @@
 * {
-    font-family: 'open Sans', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
-#container {
-    height: 100vh;
-    position: relative;
+#containerDiv {
+  height: 100vh;
+  position: relative;
 }
 
 /* Side Bar */
 #sideBar {
-    width: 410px;
-    height: 100%;
-    display: inline-block;
-    position: relative;
+  width: 410px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
 }
 
 #barraDeFerramentas {
-    width: 100%;
-    height: 60px;
-    background-color: #EEE;
+  width: 100%;
+  height: 60px;
+  background-color: #eee;
 }
 
 .fotoUsuario {
-    width: 40px;
-    border-radius: 50%;
-    margin: 10px 0 0 15px;
-    background-color: #CCC;
+  width: 40px;
+  border-radius: 50%;
+  margin: 10px 0 0 15px;
+  background-color: #ccc;
+}
+
+.imgDiv{
+  display: flex;
+  align-items: center;
+}
+
+.userName{
+  padding-left: 1rem;
 }
 
 .auxIcon {
-    float: right;
-    height: 60px;
-    line-height: 60px;
-    padding-right: 20px;
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  padding-right: 20px;
 }
 
 .auxIcon i {
-    color: #80868A;
-    font-size: 20px;
-    margin: 0 15px 0 15px;
-    cursor: pointer;
+  color: #80868a;
+  font-size: 20px;
+  margin: 0 15px 0 15px;
+  cursor: pointer;
 }
 
 /* Container de Notificações */
 #containerNotification {
-    width: 100%;
-    height: 90px;
-    padding: 23px 0 0 80px;
-    background-color: #9DE1FE;
-    color: #384C56;
-    position: relative;
-    box-sizing: border-box;
-    cursor: pointer;
+  width: 100%;
+  height: 90px;
+  padding: 23px 0 0 80px;
+  background-color: #9de1fe;
+  color: #384c56;
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
 }
 
 .fas.fa-bell-slash {
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    line-height: 45px;
-    border-radius: 50%;
-    font-size: 18px;
-    color: #9DE1FE;
-    background-color: #F5FCFF;
-    position: absolute;
-    top: 20px;
-    left: 15px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #9de1fe;
+  background-color: #f5fcff;
+  position: absolute;
+  top: 20px;
+  left: 15px;
 }
 
 #containerNotification p {
-    margin: 0;
+  margin: 0;
 }
 
 #containerNotification #receberNotification {
-    font-size: 15px;
-    margin-bottom: 3px;
+  font-size: 15px;
+  margin-bottom: 3px;
 }
 
 #containerNotification #ativarNotification {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 /* Container de Pesquisa */
 #containerPesquisa {
-    width: 100%;
-    height: 50px;
-    padding: 7.5px 0 0 7.5px;
-    background-color: #F8F8F8;
-    position: relative;
-    color: #BDC1C3;
-    box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  padding: 7.5px 0 0 7.5px;
+  background-color: #f8f8f8;
+  position: relative;
+  color: #bdc1c3;
+  box-sizing: border-box;
 }
 
 #porcurarContato {
-    position: absolute;
-    left: 30px;
-    top: 18px;
-    font-size: 14px;
+  position: absolute;
+  left: 30px;
+  top: 18px;
+  font-size: 14px;
 }
 
 #procura {
-    border: none;
-    width: 385px;
-    height: 35px;
-    padding-left: 60px;
-    border-radius: 17.5px;
-    background-color: #FFF;
-    box-sizing: border-box;
+  border: none;
+  width: 385px;
+  height: 35px;
+  padding-left: 60px;
+  border-radius: 17.5px;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
 #procura::placeholder {
-    color: #BDC1C3;
+  color: #bdc1c3;
 }
 
 /* Container de Contatos */
 #containerContatos {
-    height: auto;
-    background-color: #FFF;
+  height: auto;
+  background-color: #fff;
 }
 
 .boxContato {
-    cursor: pointer;
-    height: 72px;
-    background-color: #FFF;
-    border-top: 1px solid #f2f2f2;
-    position: relative;
-    box-sizing: border-box;
+  cursor: pointer;
+  height: 72px;
+  background-color: #fff;
+  border-top: 1px solid #f2f2f2;
+  position: relative;
+  box-sizing: border-box;
 }
 .boxContato:last-child {
-    border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
-.boxContato:hover{
-    background-color: #F4F5F5;
+.boxContato:hover {
+  background-color: #f4f5f5;
 }
 
 .chatAtivo {
-    background-color: #E9EBEB;
+  background-color: #e9ebeb;
 }
 
-.chatAtivo.boxContato:hover{
-    background-color: #E9EBEB;
+.chatAtivo.boxContato:hover {
+  background-color: #e9ebeb;
 }
 
-.boxContato .fotoUsuario{
-    width: 50px;
+.boxContato .fotoUsuario {
+  width: 50px;
 }
 
 .ifoUsuario {
-    margin-left: 15px;
-    padding-top: 10px;
-    display: inline-block;
+  margin-left: 15px;
+  padding-top: 10px;
+  display: inline-block;
 }
 
-.ifoUsuario p, .infoMenssage p {
-    margin: 0;
+.ifoUsuario p,
+.infoMenssage p {
+  margin: 0;
 }
 
 .nomeUsuario {
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 15px;
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 15px;
 }
 .previewMenssage {
-    font-size: 14px;
-    color: #454545;
+  font-size: 14px;
+  color: #454545;
 }
 
 .fa-check-double {
-    margin-right: 5px;
-    color: #4FC3F7;
+  margin-right: 5px;
+  color: #4fc3f7;
 }
 
 .infoMenssage {
-    position: absolute;
-    top: 12px;
-    right: 20px;
-    display: inline-block;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  display: inline-block;
 }
 
 .infoMenssage .horario {
-    font-size: 12px;
-    margin-bottom: 5px;
-    color: #CCC;
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #ccc;
 }
 
 .menssagePendente {
-    background-color: #04fa67;
-    color: #FFF;
-    width: 19px;
-    height: 19px;
-    line-height: 19px;
-    font-size: 12px;
-    font-weight: bold;
-    border-radius: 50%;
-    text-align: center;
-    float: right;
+  background-color: #04fa67;
+  color: #fff;
+  width: 19px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  float: right;
 }
 
 /* CHAT */
 
 /* Container Chat */
 #chatArea {
-    position: absolute;
-    top: 0;
-    left: 410px;
-    width: calc(100% - 410px);
-    height: 100%;
-    background-color: #CCC;
+  position: absolute;
+  top: 0;
+  left: 410px;
+  width: calc(100% - 410px);
+  height: 100%;
+  background-color: #ccc;
 }
 
 /* Chat Navbar */
 #chatNavBar {
-    height: 60px;
-    background-color: #EEE;
-    border-left: 1px solid #DDD;
+  height: 60px;
+  background-color: #eee;
+  border-left: 1px solid #ddd;
 }
 
 #chatNavBar p {
-    margin: 0;
-    float: right;
-    margin-left: 20px;
+  margin: 0;
+  float: right;
+  margin-left: 20px;
 }
 
 #containerContactInfo {
-    display: inline-block;
+  display: inline-block;
 }
 
 #containerContactInfo .nomeUsuario {
-    font-size: 16px;
-    height: 60px;
-    line-height: 60px;
+  font-size: 16px;
+  height: 60px;
+  line-height: 60px;
 }
 
 #containerFerramentasChat {
-    float: right;
-    height: 60px;
-    line-height: 60px;
-    margin-right: 20px;
+  float: right;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
 }
 
 #containerFerramentasChat li {
-    display: inline-block;
-    margin: 0 15px 0 15px;
-    font-size: 18px;
-    color: #80868A;
-    cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0 15px;
+  font-size: 18px;
+  color: #80868a;
+  cursor: pointer;
 }
 
 /* Menssagens */
-#containerMenssages {
-    background-color: #E1DAD2;
-    height: calc(100% - 120px);
-    position: relative;
-}
-
-#containerMenssages p {
-    margin: 0;
-}
 
 .bg-image {
-    background-image: url('./img/background_whats.png');
-    background-repeat: repeat;
-    opacity: .06;
-    width: 100%;
-    height: 100%;
+  background-image: url("./img/bg-wp.png");
+  background-repeat: repeat;
+  height: calc(100% - 120px);
 }
 
+.message-container {
+  height: calc(100% - 120px);
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.message-container p {
+  margin: 0;
+}
+
+.other {
+  background-color: #fff;
+  align-self: flex-start;
+  padding: 0.4rem 4rem 0.4rem 0.2rem;
+  border-radius: 0.3rem;
+  color: black;
+  margin: .3rem 0;
+}
+
+.me {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  padding: 0.4rem 4rem 0.4rem 0.2rem;
+  border-radius: 0.3rem;
+  color: black;
+  margin: .3rem 0;
+
+}
+
+.time{
+  font-size: .7rem;
+  color: #667781;
+  display: inline-block;
+  padding-left: .5rem;
+
+}
+
+.joinChatContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh !important;
+  margin-top: 10rem;
+}
+
+.joinChatContainer input{
+  padding: .5rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid red;
+}
+
+.joinChatContainer input:focus{
+  outline: none;
+}
+
+.joinChatContainer button{
+  padding: .5rem 5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
 .chatMenssages {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    padding: 30px 80px;
-    box-sizing: border-box;
+  display: flex;
 }
 
 .chatMenssages P {
-    display: block;
-    color: #262626;
-    font-size: 14px;
-    padding: 7px;
-    border-radius: 7px;
-    position: relative;
-    width: 200px;
+  display: block;
+  color: #262626;
+  font-size: 14px;
+  padding: 7px;
+  border-radius: 7px;
+  position: relative;
+  width: 200px;
 }
 
 .remetenteMenssage {
-    background-color: #FFF;
+  background-color: #fff;
 }
 
 .remetenteMenssage:before {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 17px solid transparent;
-    border-right: 17px solid #FFF;
-    position: absolute;
-    top: 0;
-    left: -10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-right: 17px solid #fff;
+  position: absolute;
+  top: 0;
+  left: -10px;
 }
 
 .destinMenssage {
-    background-color: #DCF8C6;
-    float: right;
+  background-color: #dcf8c6;
+  /* float: right; */
 }
 
 .destinMenssage:after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-bottom: 17px solid transparent;
-    border-left: 17px solid #DCF8C6;
-    position: absolute;
-    top: 0;
-    right: -10px;
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 17px solid transparent;
+  border-left: 17px solid #dcf8c6;
+  position: absolute;
+  top: 0;
+  right: -10px;
 }
 
 /* Enviar Menssagem */
 .containerEnviarMenssage {
-    background-color: #EFEFEF;
-    border-left: 1px solid #DDD;
-    height: 60px;
-    padding: 0 20px 0 20px;
-    box-sizing: border-box;
-    position: relative;
+  background-color: #efefef;
+  border-left: 1px solid #ddd;
+  height: 60px;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 #inputUsuario {
-    position: absolute;
-    top: 10px;
-    left: 60px;
-    background-color: #FFF;
-    border: none;
-    width: calc(89% - 20px);
-    height: 40px;
-    border-radius: 20px;
-    padding-left: 20px;
-    font-size: 16px;
+  position: absolute;
+  top: 10px;
+  left: 60px;
+  background-color: #fff;
+  border: none;
+  width: calc(89% - 20px);
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 20px;
+  font-size: 16px;
 }
 
 .containerEnviarMenssage i {
-    font-size: 24px;
-    color: #80868A;
-    cursor: pointer;
-    height: 60px;
-    line-height: 60px;
+  font-size: 24px;
+  color: #80868a;
+  cursor: pointer;
+  height: 60px;
+  line-height: 60px;
 }
 
-.fa-microphone{
-    float: right;
+.fa-microphone {
+  float: right;
 }
